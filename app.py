@@ -2,6 +2,7 @@ from flask import Flask, render_template
 import socketio
 from time import sleep
 from rpi_ws281x import *
+#https://github.com/miguelgrinberg/python-socketio/blob/main/docs/server.rst
 
 #   ___     _____  _____  __   ___  _____.  _____
 #  /  /    /_  _/ /  __/ /  /_/  / /_   _/ /  __/
