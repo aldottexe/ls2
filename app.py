@@ -4,10 +4,10 @@ from time import sleep
 from rpi_ws281x import *
 #https://github.com/miguelgrinberg/python-socketio/blob/main/docs/server.rst
 
-#   ___     _____  _____  __   ___  _____.  _____
-#  /  /    /_  _/ /  __/ /  /_/  / /_   _/ /  __/
+#   ___     _____  _____  __   ___  _____.  _____ 
+#  /  /    /_  _/ /  __/ /  /_/  / /_   _/ /  __/ 
 # /  /_   _/ /_  / /_-. /  __   /   / /   _\  \  
-#/_____/ /.___/ |____/ /__/ /__/   /_/   \____/
+#/_____/ /.___/ |____/ /__/ /__/   /_/   \____/ 
 #LIGHTS
 
 #the rpi_ws281x Library stores color values as 24bit ints, where values of 3 8bit ints are shoved right next
@@ -97,8 +97,8 @@ def fade(strip, new_state=None, frames=20):
 
 #  __  _  __   _____  _____
 # |  |/ |/  / /  __/ /  -. /
-# |        / /  _/  /  _ <"
-# |___/|__/ /____/ /_____/
+# |        / /  _/  /  _ <" 
+# |___/|__/ /____/ /_____/  
 #REQUEST HANDLING
 
 sio = socketio.Server(async_mode='threading')
@@ -128,10 +128,10 @@ def off():
 
     return render_template('/off.html')
 
-#    _____  ____   ____  __ ___   _____  _____.
-#   /  __/ / _  | /  _/ /  v  /  /  __/ /_   _/
-#  _\  \  / _/ / / /_  /    <.  /  _/    / /     
-# \____/ |____/ |___/ /__/|__| /____/   /_/    
+#    _____  ____   ____  __ ___   _____  _____. 
+#   /  __/ / _  | /  _/ /  v  /  /  __/ /_   _/ 
+#  _\  \  / _/ / / /_  /    <.  /  _/    / /    
+# \____/ |____/ |___/ /__/|__| /____/   /_/     
 #SOCKET STUFF
 
 @sio.event
