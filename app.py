@@ -170,7 +170,7 @@ def color1(sid, data):
     global color1
     print(sid[0:3], "color1:", data)
     color1 = fromHex(data)
-    show(strip, gradient(color1, color2))
+    show(strip, gradient(LED_COUNT, color1, color2))
 
 
 @sio.event
@@ -178,7 +178,7 @@ def color2(sid, data):
     global color2
     print(sid[0:3], "color2:", data)
     color1 = fromHex(data)
-    show(strip, gradient(color1, color2))
+    show(strip, gradient(LED_COUNT, color1, color2))
 
 #    ____  ____   __  __  _____  _____  _____
 #   /  _/ / _  | /  |/ / / ___/ /_  _/ /  __/
