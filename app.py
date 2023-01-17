@@ -177,7 +177,7 @@ def color1(sid, data):
 def color2(sid, data):
     global color2
     print(sid[0:3], "color2:", data)
-    color1 = fromHex(data)
+    color2 = fromHex(data)
     show(strip, gradient(LED_COUNT, color1, color2))
 
 #    ____  ____   __  __  _____  _____  _____
