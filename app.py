@@ -198,8 +198,8 @@ LED_CHANNEL = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
 
 powered = False
 last_on = []
-color1 = 0
-color2 = 0
+color1 = [0, 0, 0]
+color2 = [0, 0, 0]
 #    _   _     ___     _____  __  __
 #   / | / |   / _ |   /_  _/ /  |/ /
 #  /  |/  |  / -* |  _/ /_  /     /
