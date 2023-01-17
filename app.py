@@ -4,9 +4,9 @@ from time import sleep
 from rpi_ws281x import *
 # https://github.com/miguelgrinberg/python-socketio/blob/main/docs/server.rst
 
-#   ___     _____  _____  __   ___  _____.  _____
-#  /  /    /_  _/ /  __/ /  /_/  / /_   _/ /  __/
-# /  /_   _/ /_  / /_-. /  __   /   / /   _\  \
+#    ___     _____  _____  __   ___  _____.  _____
+#   /  /    /_  _/ /  __/ /  /_/  / /_   _/ /  __/
+#  /  /_   _/ /_  / /_-. /  __   /   / /   _\  \
 # /_____/ /.___/ |____/ /__/ /__/   /_/   \____/
 # LIGHTS
 

@@ -1,5 +1,5 @@
 console.log("gonna connect to the johnsky john")
-const socket = io.connect('http://127.0.0.1:2000')
+const socket = io.connect('http://raspberrypi.local:80')
 
 document.querySelector('p').setAttribute("style", "color:red");
 
