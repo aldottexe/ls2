@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head>
+      <title>Parcel Sandbox</title>
       <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>lights</title>
-
-      <link rel="stylesheet" href="../static/main.css" />
-      <script src="https://cdn.socket.io/4.4.1/socket.io.js"></script>
-      <script defer src="../static/app.js"></script>
+      <link rel="stylesheet" href="https://use.typekit.net/amd4oxb.css" />
+      <link rel="stylesheet" href="src/styles.css" />
    </head>
    <body>
-      <h1>LIGHTS</h1>
-      <img src="../static/pixelart.png" alt="pixelart" />
-      <div class="inputs">
-         <input id="c1" type="color" />
-         <input id="c2" type="color" />
-      </div>
+      <section id="content">
+         <h1>LIGHTS</h1>
+         <a class="text power" href="off">
+            ON
+            <span class="shift"> click to turn off</span>
+         </a>
+         <p class="text">
+            Use the color boxes to select two colors. As you choose, a gradient
+            between the two colors will apear on the light stip. To turn the
+            lights off, press the switch.
+         </p>
+         <div id="animation"></div>
+         <div class="inputs-cont">
+            <div class="button-cont">
+               COLOR-1
+               <input type="color" id="c1" />
+            </div>
+            <div class="button-cont">
+               COLOR-2
+               <input type="color" id="c2" />
+            </div>
+         </div>
+      </section>
+      <script src="https://cdn.socket.io/4.4.1/socket.io.js"></script>
+      <script type="module" src="static/index.js"></script>
    </body>
 </html>
