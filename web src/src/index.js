@@ -42,7 +42,7 @@ scene.add(light);
 const loader = new GLTFLoader();
 let strip;
 loader.load(
-  "src/lightStrip.glb",
+  "static/lightStrip.glb",
   (gltf) => {
     scene.add(gltf.scene);
     strip = scene.children[1];
