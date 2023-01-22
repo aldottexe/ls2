@@ -132,7 +132,7 @@ def on():
         fade(strip, last_on)
         powered = True
 
-    return render_template('index.html')
+    return render_template('index.html', hex1=hex1, hex2=hex2)
 
 
 @app.route("/off")
@@ -169,6 +169,7 @@ def disconnect(sid):
 def color1(sid, data):
     global color1
     print(sid[0:3], "color1:", data)
+    hex1 = data
     color1 = fromHex(data)
     show(strip, gradient(LED_COUNT, color1, color2))
 
@@ -177,6 +178,7 @@ def color1(sid, data):
 def color2(sid, data):
     global color2
     print(sid[0:3], "color2:", data)
+    hex2 = data
     color2 = fromHex(data)
     show(strip, gradient(LED_COUNT, color1, color2))
 
@@ -198,8 +200,11 @@ LED_CHANNEL = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
 
 powered = False
 last_on = []
-color1 = [0, 0, 0]
-color2 = [0, 0, 0]
+hex1 = "#FF0000"
+hex2 = "#8000FF"
+color1 = fromHex(hex1)
+color2 = fromHex(hex2)
+
 #    _   _     ___     _____  __  __
 #   / | / |   / _ |   /_  _/ /  |/ /
 #  /  |/  |  / -* |  _/ /_  /     /
