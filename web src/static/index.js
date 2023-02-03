@@ -73,7 +73,7 @@ function animate() {
 // /____/ |____/ |___/ /__/|__| /____/  /_/   
 
 console.log("gonna connect to the johnsky john")
-const socket = io.connect('http://raspberrypi.local:80')
+const socket = io.connect('http://lights.local:80')
 
 const color1 = document.querySelector('#c1');
 color1.addEventListener('input', () => {
