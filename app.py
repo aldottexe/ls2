@@ -167,7 +167,7 @@ def disconnect(sid):
 
 @sio.event
 def color1(sid, data):
-    global color1
+    global color1, hex1
     print(sid[0:3], "color1:", data)
     hex1 = data
     color1 = fromHex(data)
@@ -176,7 +176,7 @@ def color1(sid, data):
 
 @sio.event
 def color2(sid, data):
-    global color2
+    global color2, hex2
     print(sid[0:3], "color2:", data)
     hex2 = data
     color2 = fromHex(data)
