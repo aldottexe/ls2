@@ -78,7 +78,7 @@ def show(strip, newRGB=None):
 # the framerate is more or less whatever the hardware can manage, with a cap at 60fps
 
 
-def fade(strip, new_state=None, frames=20):
+def fade(strip, new_state=None, frames=10):
     led_count = LED_COUNT
     if new_state == None:
         new_state = [[0, 0, 0]] * led_count
