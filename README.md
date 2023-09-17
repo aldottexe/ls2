@@ -13,4 +13,4 @@ you can probably decrease the sleep amount, but my pi zero is super slow
 
 ## dependencies
 
-  sudo pip3 install flask rpi-ws281x python-socketio
+    sudo pip3 install flask rpi-ws281x python-socketio
